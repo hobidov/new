@@ -1057,10 +1057,9 @@ with main_col:
 
     with s2:
        render_plotly_bar_card(
-           "Behaviour Distribution",
-           behaviour_counts,
-           PALETTE["accent"],
-           caption="Actions participants took after the performance."
+           "Audience Segmentation",
+            audience_counts,
+            PALETTE["secondary"]
        )
 
 
@@ -1073,7 +1072,12 @@ with main_col:
             caption="This chart shows the distribution of emotions experienced by participants.",
         )
     with s4:
-        render_plotly_bar_card("Audience Segmentation", audience_counts, PALETTE["secondary"])
+        render_plotly_bar_card(
+           "Behaviour Distribution",
+           behaviour_counts,
+           PALETTE["accent"],
+           caption="Actions participants took after the performance."
+       )
 
 
 # 🔥 SENTIMENT ANALYSIS (NOW OUTSIDE s4)
