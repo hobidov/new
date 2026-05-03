@@ -1066,18 +1066,20 @@ with main_col:
     s3, s4 = st.columns(2)
     with s3:
         render_plotly_bar_card(
-            "Emotion Distribution",
-            emotion_counts,
-            PALETTE["primary"],
-            caption="This chart shows the distribution of emotions experienced by participants.",
-        )
-    with s4:
-        render_plotly_bar_card(
            "Behaviour Distribution",
            behaviour_counts,
            PALETTE["accent"],
            caption="Actions participants took after the performance."
        )
+        
+    with s4:
+        render_plotly_bar_card(
+            "Emotion Distribution",
+            emotion_counts,
+            PALETTE["primary"],
+            caption="This chart shows the distribution of emotions experienced by participants.",
+        )
+        
 
 
 # 🔥 SENTIMENT ANALYSIS (NOW OUTSIDE s4)
